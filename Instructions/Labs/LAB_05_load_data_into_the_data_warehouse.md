@@ -79,6 +79,12 @@ You will also create a new **Sale** clustered columnstore table within the **wwi
     ![The run button is highlighted in the query toolbar.](images/synapse-studio-query-toolbar-run.png "Run")
 
     The results should include a single row for the **wwi_staging** schema, which was created when setting up the previous lab.
+    
+    > **Note:** If this query returns no results, then execute the following SQL script to create the `wwi_staging` schema and select **Run** from the toolbar:
+
+    ```sql
+    CREATE SCHEMA wwi_staging
+    ```
 
 6. In the query window, replace the script with the following to create the heap table:
 
